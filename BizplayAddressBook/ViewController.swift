@@ -23,3 +23,4 @@ class ViewController: UIViewController {
 
 }
 
+let MASTER_MAIN_GATEWAY = "MasterMG"

@@ -7,14 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E0B88C41D646D580020AE33 /* EmplCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E0B88C31D646D580020AE33 /* EmplCell.xib */; };
+		3E0B88CC1D646F550020AE33 /* EmplCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0B88CB1D646F550020AE33 /* EmplCustomCell.swift */; };
+		3E13B2AD1D630D440047AC89 /* EmplInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E13B2AC1D630D440047AC89 /* EmplInfo.swift */; };
+		3E13B2AF1D6310EC0047AC89 /* GetEmplDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E13B2AE1D6310EC0047AC89 /* GetEmplDataManager.swift */; };
+		3E15154C1D5DD42900439D0A /* BizLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15154B1D5DD42900439D0A /* BizLoginViewController.swift */; };
+		3E1515511D5DD59300439D0A /* ShareManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E15154F1D5DD59300439D0A /* ShareManager.swift */; };
+		3E1515521D5DD59300439D0A /* LoginShareManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1515501D5DD59300439D0A /* LoginShareManager.swift */; };
+		3E1515541D5DD5B800439D0A /* CommonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1515531D5DD5B800439D0A /* CommonClass.swift */; };
+		3E1515561D5DD5FD00439D0A /* ConstantClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1515551D5DD5FD00439D0A /* ConstantClass.swift */; };
+		3E1515581D5DD62000439D0A /* DataAccessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1515571D5DD62000439D0A /* DataAccessManager.swift */; };
+		3E15155A1D5DD64300439D0A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1515591D5DD64300439D0A /* LoadingView.swift */; };
 		3EE0B87F1D50AB7E00211565 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE0B87E1D50AB7E00211565 /* AppDelegate.swift */; };
 		3EE0B8811D50AB7E00211565 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE0B8801D50AB7E00211565 /* ViewController.swift */; };
 		3EE0B8841D50AB7E00211565 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EE0B8821D50AB7E00211565 /* Main.storyboard */; };
 		3EE0B8861D50AB7E00211565 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EE0B8851D50AB7E00211565 /* Assets.xcassets */; };
 		3EE0B8891D50AB7E00211565 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EE0B8871D50AB7E00211565 /* LaunchScreen.storyboard */; };
+		3EFE647F1D615607000D85AC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFE647E1D615607000D85AC /* Reachability.m */; };
+		3EFE64821D6157FC000D85AC /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFE64811D6157FC000D85AC /* WebViewController.swift */; };
+		3EFE64841D615875000D85AC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFE64831D615875000D85AC /* MainViewController.swift */; };
+		3EFE64931D6158ED000D85AC /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFE64881D6158ED000D85AC /* NSObject+SBJSON.m */; };
+		3EFE64941D6158ED000D85AC /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFE648A1D6158ED000D85AC /* NSString+SBJSON.m */; };
+		3EFE64951D6158ED000D85AC /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFE648C1D6158ED000D85AC /* SBJSON.m */; };
+		3EFE64961D6158ED000D85AC /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFE648E1D6158ED000D85AC /* SBJsonBase.m */; };
+		3EFE64971D6158ED000D85AC /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFE64901D6158ED000D85AC /* SBJsonParser.m */; };
+		3EFE64981D6158ED000D85AC /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EFE64921D6158ED000D85AC /* SBJsonWriter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E0B88C31D646D580020AE33 /* EmplCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmplCell.xib; sourceTree = "<group>"; };
+		3E0B88CB1D646F550020AE33 /* EmplCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmplCustomCell.swift; path = ../EmplCustomCell.swift; sourceTree = "<group>"; };
+		3E13B2AC1D630D440047AC89 /* EmplInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmplInfo.swift; sourceTree = "<group>"; };
+		3E13B2AE1D6310EC0047AC89 /* GetEmplDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetEmplDataManager.swift; sourceTree = "<group>"; };
+		3E15154B1D5DD42900439D0A /* BizLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BizLoginViewController.swift; sourceTree = "<group>"; };
+		3E15154F1D5DD59300439D0A /* ShareManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareManager.swift; sourceTree = "<group>"; };
+		3E1515501D5DD59300439D0A /* LoginShareManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginShareManager.swift; sourceTree = "<group>"; };
+		3E1515531D5DD5B800439D0A /* CommonClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonClass.swift; sourceTree = "<group>"; };
+		3E1515551D5DD5FD00439D0A /* ConstantClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstantClass.swift; sourceTree = "<group>"; };
+		3E1515571D5DD62000439D0A /* DataAccessManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataAccessManager.swift; sourceTree = "<group>"; };
+		3E1515591D5DD64300439D0A /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		3EE0B87B1D50AB7E00211565 /* BizplayAddressBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BizplayAddressBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE0B87E1D50AB7E00211565 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EE0B8801D50AB7E00211565 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +53,24 @@
 		3EE0B8851D50AB7E00211565 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EE0B8881D50AB7E00211565 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3EE0B88A1D50AB7E00211565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EFE647D1D615607000D85AC /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		3EFE647E1D615607000D85AC /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		3EFE64801D61562E000D85AC /* BizplayAddressBook-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BizplayAddressBook-Bridging-Header.h"; sourceTree = "<group>"; };
+		3EFE64811D6157FC000D85AC /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		3EFE64831D615875000D85AC /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3EFE64861D6158ED000D85AC /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		3EFE64871D6158ED000D85AC /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		3EFE64881D6158ED000D85AC /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		3EFE64891D6158ED000D85AC /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		3EFE648A1D6158ED000D85AC /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		3EFE648B1D6158ED000D85AC /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		3EFE648C1D6158ED000D85AC /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		3EFE648D1D6158ED000D85AC /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		3EFE648E1D6158ED000D85AC /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		3EFE648F1D6158ED000D85AC /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		3EFE64901D6158ED000D85AC /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		3EFE64911D6158ED000D85AC /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		3EFE64921D6158ED000D85AC /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +84,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E15154D1D5DD56600439D0A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				3EFE64811D6157FC000D85AC /* WebViewController.swift */,
+				3E1515571D5DD62000439D0A /* DataAccessManager.swift */,
+				3E13B2AE1D6310EC0047AC89 /* GetEmplDataManager.swift */,
+				3E1515531D5DD5B800439D0A /* CommonClass.swift */,
+				3E1515591D5DD64300439D0A /* LoadingView.swift */,
+				3E15154E1D5DD58800439D0A /* SharedManager */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		3E15154E1D5DD58800439D0A /* SharedManager */ = {
+			isa = PBXGroup;
+			children = (
+				3E1515551D5DD5FD00439D0A /* ConstantClass.swift */,
+				3E15154F1D5DD59300439D0A /* ShareManager.swift */,
+				3E1515501D5DD59300439D0A /* LoginShareManager.swift */,
+			);
+			name = SharedManager;
+			sourceTree = "<group>";
+		};
+		3E15155B1D5DD66000439D0A /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				3EFE64851D6158D8000D85AC /* JSONLib */,
+				3E15155C1D5DD67A00439D0A /* Reachability */,
+				3EFE64801D61562E000D85AC /* BizplayAddressBook-Bridging-Header.h */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		3E15155C1D5DD67A00439D0A /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				3EFE647D1D615607000D85AC /* Reachability.h */,
+				3EFE647E1D615607000D85AC /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
 		3EE0B8721D50AB7E00211565 = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +147,39 @@
 			children = (
 				3EE0B87E1D50AB7E00211565 /* AppDelegate.swift */,
 				3EE0B8801D50AB7E00211565 /* ViewController.swift */,
+				3EFE64831D615875000D85AC /* MainViewController.swift */,
+				3E15154B1D5DD42900439D0A /* BizLoginViewController.swift */,
+				3E13B2AC1D630D440047AC89 /* EmplInfo.swift */,
 				3EE0B8821D50AB7E00211565 /* Main.storyboard */,
+				3E0B88C31D646D580020AE33 /* EmplCell.xib */,
+				3E0B88CB1D646F550020AE33 /* EmplCustomCell.swift */,
 				3EE0B8851D50AB7E00211565 /* Assets.xcassets */,
 				3EE0B8871D50AB7E00211565 /* LaunchScreen.storyboard */,
 				3EE0B88A1D50AB7E00211565 /* Info.plist */,
+				3E15155B1D5DD66000439D0A /* lib */,
+				3E15154D1D5DD56600439D0A /* Utility */,
 			);
 			path = BizplayAddressBook;
+			sourceTree = "<group>";
+		};
+		3EFE64851D6158D8000D85AC /* JSONLib */ = {
+			isa = PBXGroup;
+			children = (
+				3EFE64861D6158ED000D85AC /* JSON.h */,
+				3EFE64871D6158ED000D85AC /* NSObject+SBJSON.h */,
+				3EFE64881D6158ED000D85AC /* NSObject+SBJSON.m */,
+				3EFE64891D6158ED000D85AC /* NSString+SBJSON.h */,
+				3EFE648A1D6158ED000D85AC /* NSString+SBJSON.m */,
+				3EFE648B1D6158ED000D85AC /* SBJSON.h */,
+				3EFE648C1D6158ED000D85AC /* SBJSON.m */,
+				3EFE648D1D6158ED000D85AC /* SBJsonBase.h */,
+				3EFE648E1D6158ED000D85AC /* SBJsonBase.m */,
+				3EFE648F1D6158ED000D85AC /* SBJsonParser.h */,
+				3EFE64901D6158ED000D85AC /* SBJsonParser.m */,
+				3EFE64911D6158ED000D85AC /* SBJsonWriter.h */,
+				3EFE64921D6158ED000D85AC /* SBJsonWriter.m */,
+			);
+			name = JSONLib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +243,7 @@
 				3EE0B8891D50AB7E00211565 /* LaunchScreen.storyboard in Resources */,
 				3EE0B8861D50AB7E00211565 /* Assets.xcassets in Resources */,
 				3EE0B8841D50AB7E00211565 /* Main.storyboard in Resources */,
+				3E0B88C41D646D580020AE33 /* EmplCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +254,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E13B2AD1D630D440047AC89 /* EmplInfo.swift in Sources */,
 				3EE0B8811D50AB7E00211565 /* ViewController.swift in Sources */,
+				3EFE64961D6158ED000D85AC /* SBJsonBase.m in Sources */,
+				3EFE64821D6157FC000D85AC /* WebViewController.swift in Sources */,
+				3E1515581D5DD62000439D0A /* DataAccessManager.swift in Sources */,
+				3EFE64841D615875000D85AC /* MainViewController.swift in Sources */,
 				3EE0B87F1D50AB7E00211565 /* AppDelegate.swift in Sources */,
+				3E1515521D5DD59300439D0A /* LoginShareManager.swift in Sources */,
+				3EFE647F1D615607000D85AC /* Reachability.m in Sources */,
+				3E15154C1D5DD42900439D0A /* BizLoginViewController.swift in Sources */,
+				3E13B2AF1D6310EC0047AC89 /* GetEmplDataManager.swift in Sources */,
+				3E1515511D5DD59300439D0A /* ShareManager.swift in Sources */,
+				3EFE64971D6158ED000D85AC /* SBJsonParser.m in Sources */,
+				3EFE64951D6158ED000D85AC /* SBJSON.m in Sources */,
+				3E1515541D5DD5B800439D0A /* CommonClass.swift in Sources */,
+				3EFE64981D6158ED000D85AC /* SBJsonWriter.m in Sources */,
+				3E0B88CC1D646F550020AE33 /* EmplCustomCell.swift in Sources */,
+				3E1515561D5DD5FD00439D0A /* ConstantClass.swift in Sources */,
+				3EFE64931D6158ED000D85AC /* NSObject+SBJSON.m in Sources */,
+				3EFE64941D6158ED000D85AC /* NSString+SBJSON.m in Sources */,
+				3E15155A1D5DD64300439D0A /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +321,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -228,6 +367,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -249,10 +389,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BizplayAddressBook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.webcash.BizplayAddressBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./BizplayAddressBook/BizplayAddressBook-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -260,10 +404,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BizplayAddressBook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.webcash.BizplayAddressBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./BizplayAddressBook/BizplayAddressBook-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -286,6 +432,7 @@
 				3EE0B88F1D50AB7E00211565 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

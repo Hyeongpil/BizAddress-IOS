@@ -8,11 +8,13 @@
 
 import UIKit
 // todo - 메인 스토리보드 아이디값 맞추기
-var emplList : Array<EmplInfo> = []
+
 
 class MainViewController:  UIViewController, UITableViewDelegate, UITableViewDataSource {
+    var emplList : Array<EmplInfo> = []
 
-    @IBOutlet var mainTableView: UITableView!
+    @IBOutlet weak var mainTableView: UITableView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +24,7 @@ class MainViewController:  UIViewController, UITableViewDelegate, UITableViewDat
         let userDefault = NSUserDefaults.standardUserDefaults()
         var nib = UINib(nibName: "EmplCell", bundle: nil)
         mainTableView.registerNib(nib, forCellReuseIdentifier: "cell")
-
+        GetEmplInfo("",dvsn_cd: "")
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -33,31 +35,15 @@ class MainViewController:  UIViewController, UITableViewDelegate, UITableViewDat
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.navigationBarHidden = false
         NSUserDefaults.standardUserDefaults().synchronize()
-        
         CommonClass.setStatusBarBackground(UIColor.StatusBarColor())
+        
     }
     
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        GetEmplInfo("",dvsn_cd: "")
-    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
-
-//    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//        return 1
-//    }
-
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return emplList.count
-    }
-    
     func GetEmplInfo(search : String, dvsn_cd : String) {
         let search : String = search
         let dvsn_cd : String = dvsn_cd
@@ -115,28 +101,41 @@ class MainViewController:  UIViewController, UITableViewDelegate, UITableViewDat
                         email: email,
                         phone : phone,
                         profileImg : profileImg)
-                     emplList.append(temp)
+                     self.emplList.append(temp)
                 }
-                print(emplList)
+                print(self.emplList)
+                self.mainTableView.reloadData()
             }
         })
     }
     
 
-
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.emplList.count
+    }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell : EmplCustomCell = self.mainTableView.dequeueReusableCellWithIdentifier("cell") as! EmplCustomCell
-
-        // Configure the cell...
-        cell.name.text = emplList[indexPath.row].name
-        cell.division.text = emplList[indexPath.row].division
+        
+        cell.name.text = self.emplList[indexPath.row].name
+        cell.division.text = self.emplList[indexPath.row].division
+        if((self.emplList[indexPath.row].profileImg) != ""){
+            let url = NSURL(string: self.emplList[indexPath.row].profileImg!)
+            let data = NSData(contentsOfURL: url!)
+            cell.profileImg.image = UIImage(data: data!)
+        }else{
+            //이미지가 없을 때
+            cell.profileImg.image = UIImage(named: "empty_img")
+        }
 
         return cell
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         print("Row \(indexPath.row) selected")
+    }
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 55
     }
 
 

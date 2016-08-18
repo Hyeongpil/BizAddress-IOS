@@ -15,10 +15,15 @@ class EmplCustomCell: UITableViewCell {
     @IBOutlet weak var division: UILabel!
     
     @IBAction func call(sender: AnyObject) {
+        print("전화 클릭")
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        print("awakeFromNib 진입")
+        profileImg.layer.masksToBounds = false
+        profileImg.clipsToBounds = true
+        profileImg.layer.cornerRadius = profileImg.frame.size.height/2
         // Initialization code
     }
 

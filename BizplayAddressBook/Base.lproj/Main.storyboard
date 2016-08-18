@@ -15,7 +15,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Jgn-uh-tIY">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jgn-uh-tIY" id="Gvr-GH-z4b">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
@@ -28,30 +28,13 @@
                             <outlet property="delegate" destination="wZD-5c-sSg" id="Qlc-cQ-XKl"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="부서" image="division" id="X44-kH-VCi"/>
                     <navigationItem key="navigationItem" title="Root View Controller" id="YNW-kt-qp1"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vif-Qn-3VX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="321.5" y="539.5"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="YAn-kc-BVZ">
-            <objects>
-                <navigationController id="0bi-06-cZQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="3zh-8s-CyJ"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ObA-Gw-N4c">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="wZD-5c-sSg" kind="relationship" relationship="rootViewController" id="aVd-2I-t4Y"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ijE-7q-ldt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-119.5" y="539.5"/>
+            <point key="canvasLocation" x="-119.5" y="549.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Dx3-Qk-ev5">
@@ -64,33 +47,15 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="h8f-Bc-Qyg" kind="relationship" relationship="viewControllers" id="os5-Ia-hw2"/>
-                        <segue destination="0bi-06-cZQ" kind="relationship" relationship="viewControllers" id="xyE-mq-6MD"/>
+                        <segue destination="jlG-ph-fhO" kind="relationship" relationship="viewControllers" id="ZnA-mj-cGV"/>
+                        <segue destination="wZD-5c-sSg" kind="relationship" relationship="viewControllers" id="r4s-El-KeN"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RH0-4B-UMJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-765.5" y="100.5"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="qpA-uO-1du">
-            <objects>
-                <navigationController id="h8f-Bc-Qyg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="NQ6-Rr-Ks2"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="msh-5l-ZpP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="jlG-ph-fhO" kind="relationship" relationship="rootViewController" id="mEo-bZ-xkg"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qhT-TU-I11" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-119.5" y="-213.5"/>
-        </scene>
-        <!--Main View Controller-->
+        <!--연락처-->
         <scene sceneID="fFa-U6-TJ5">
             <objects>
                 <viewController id="jlG-ph-fhO" customClass="MainViewController" customModule="BizplayAddressBook" customModuleProvider="target" sceneMemberID="viewController">
@@ -101,14 +66,34 @@
                     <view key="view" contentMode="scaleToFill" id="8Yo-xz-HGU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tzb-b0-Tmi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="jlG-ph-fhO" id="4Qf-Rf-h8R"/>
+                                    <outlet property="delegate" destination="jlG-ph-fhO" id="r2Y-Lt-Vgv"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tzb-b0-Tmi" firstAttribute="leading" secondItem="8Yo-xz-HGU" secondAttribute="leading" id="3se-Xl-Gnw"/>
+                            <constraint firstItem="tzb-b0-Tmi" firstAttribute="top" secondItem="8Yo-xz-HGU" secondAttribute="top" id="PgZ-5x-7B3"/>
+                            <constraint firstItem="tzb-b0-Tmi" firstAttribute="bottom" secondItem="Utg-QP-L5L" secondAttribute="top" id="Rlx-WM-US8"/>
+                            <constraint firstAttribute="trailing" secondItem="tzb-b0-Tmi" secondAttribute="trailing" id="kb9-82-4Hb"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="연락처" image="address" id="zc7-iP-aK5"/>
                     <navigationItem key="navigationItem" id="fmB-Ki-IYy"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="mainTableView" destination="tzb-b0-Tmi" id="7Y9-bq-f3i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bKz-Vg-E1G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="342.5" y="-213.5"/>
+            <point key="canvasLocation" x="-119.5" y="-213.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UdC-Rv-V7i">
@@ -290,8 +275,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="address" width="36" height="36"/>
         <image name="bizplay_logo" width="120" height="39"/>
         <image name="chkbox_off_icon" width="19" height="19"/>
         <image name="chkbox_on_icon" width="19" height="19"/>
+        <image name="division" width="36" height="36"/>
     </resources>
 </document>
